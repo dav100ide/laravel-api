@@ -21,7 +21,7 @@ class ProjectSeeder extends Seeder
         Schema::disableForeignKeyConstraints();
         Project::truncate();
         Schema::enableForeignKeyConstraints();
-        for ($i = 0; $i < 10; $i++) {
+        for ($i = 0; $i < 5; $i++) {
             $new_project = new Project();
 
             $new_project->name = $faker->sentence(2);
