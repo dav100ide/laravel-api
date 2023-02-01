@@ -10,8 +10,8 @@ class ProjectController extends Controller
 {
    public function index()
    {
-      $project = Project::with('technologies')->get();
+      $projects = Project::with('technologies')->get();
 
-      return $project;
+      return $projects;
    }
 }
